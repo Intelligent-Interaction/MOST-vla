@@ -14,7 +14,7 @@ reads a RoboCasa365 Composite dataset.
 ## 1. Verify the MOST RoboCasa environment
 
 The common setup in the main README installs the complete
-[MOST RoboCasa environment](https://github.com/diqihe666/MOST-RoboCasa) at
+[MOST RoboCasa environment](https://github.com/Intelligent-Interaction/MOST-RoboCasa) at
 `third_party/most-robocasa`. This fork is required for RoboCasa-Long: it
 contains the three Long task definitions, their fixed scenes, semantic
 progress trackers, the shared metric utilities, and the Gym wrapper interface

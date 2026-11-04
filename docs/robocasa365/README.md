@@ -13,7 +13,7 @@ otherwise.
 ## 1. Verify the common setup
 
 RoboCasa365 evaluation must use the
-[MOST RoboCasa environment](https://github.com/diqihe666/MOST-RoboCasa), not
+[MOST RoboCasa environment](https://github.com/Intelligent-Interaction/MOST-RoboCasa), not
 an unmodified upstream RoboCasa installation. The fork supplies the semantic
 progress curves and long-horizon metrics consumed by the evaluator for all 32
 Composite Seen and Composite Unseen tasks.

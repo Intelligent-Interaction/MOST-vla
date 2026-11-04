@@ -26,7 +26,7 @@
 [![Project Page](https://img.shields.io/badge/Project-Page-1f6feb?logo=githubpages&logoColor=white)](https://most-vla.github.io/)
 [![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2611.00734)
 [![Data](https://img.shields.io/badge/%F0%9F%A4%97_Data-RoboCasa--Long-ffcc4d)](https://huggingface.co/datasets/diqihe666/robocasa_long)
-[![Simulator](https://img.shields.io/badge/Simulator-MOST--RoboCasa-181717?logo=github&logoColor=white)](https://github.com/diqihe666/MOST-RoboCasa)
+[![Simulator](https://img.shields.io/badge/Simulator-MOST--RoboCasa-181717?logo=github&logoColor=white)](https://github.com/Intelligent-Interaction/MOST-RoboCasa)
 
 </div>
 
@@ -64,7 +64,7 @@ MOST is organized into two code repositories and one dataset release:
 | Component | Purpose | Link |
 | --- | --- | --- |
 | MOST policy code | Training, checkpoint export, deployment, and evaluation | This repository |
-| MOST RoboCasa environment | Unified RoboCasa365 metrics, RoboCasa-Long tasks, and simulator environment | [MOST RoboCasa Environment](https://github.com/diqihe666/MOST-RoboCasa) |
+| MOST RoboCasa environment | Unified RoboCasa365 metrics, RoboCasa-Long tasks, and simulator environment | [MOST RoboCasa Environment](https://github.com/Intelligent-Interaction/MOST-RoboCasa) |
 | RoboCasa-Long dataset | Demonstrations and memory annotations used by the Long benchmark | [Hugging Face Dataset](https://huggingface.co/datasets/diqihe666/robocasa_long) |
 
 Both benchmark evaluators require the MOST RoboCasa environment below. Install
@@ -104,7 +104,7 @@ Create the environment used for training, checkpoint export, and model
 serving:
 
 ```bash
-git clone https://github.com/diqihe666/MOST-vla.git
+git clone https://github.com/Intelligent-Interaction/MOST-vla.git
 cd MOST-vla
 
 conda create -n most python=3.12 -y
@@ -137,7 +137,7 @@ export MOST_MEM_DINO_CKPT="$PWD/third_party/dinov2/dinov2_vits14_pretrain.pth"
 ## 2. Shared MOST RoboCasa environment
 
 RoboCasa365 and RoboCasa-Long evaluations both require the
-[MOST RoboCasa environment](https://github.com/diqihe666/MOST-RoboCasa).
+[MOST RoboCasa environment](https://github.com/Intelligent-Interaction/MOST-RoboCasa).
 This complete RoboCasa fork preserves the upstream environments, adds semantic
 progress metrics to 32 RoboCasa365 Composite tasks, and adds the three
 RoboCasa-Long tasks. The MOST evaluators consume these metrics directly, so do
@@ -153,7 +153,7 @@ conda activate robocasa
 git clone https://github.com/ARISE-Initiative/robosuite.git third_party/robosuite
 pip install -e third_party/robosuite
 
-git clone https://github.com/diqihe666/MOST-RoboCasa.git \
+git clone https://github.com/Intelligent-Interaction/MOST-RoboCasa.git \
   third_party/most-robocasa
 pip install -e third_party/most-robocasa
 python -m robocasa.scripts.setup_macros
@@ -176,7 +176,7 @@ python third_party/most-robocasa/tests/test_gym_long_metrics.py
 ```
 
 A successful run reports `Passed: 35/35`. See the
-[MOST RoboCasa environment repository](https://github.com/diqihe666/MOST-RoboCasa)
+[MOST RoboCasa environment repository](https://github.com/Intelligent-Interaction/MOST-RoboCasa)
 for the supported task list and metric definitions.
 
 ## 3. Initialize MOST from XR-1
